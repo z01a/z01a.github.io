@@ -1,0 +1,18 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
+
+html,body{
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+body > h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 50pt;
+	text-transform: uppercase;
+	cursor: default;
+	font-family: 'Bungee Hairline', cursive;
+}
