@@ -1,18 +1,48 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline');
 
 html,body{
 	height: 100%;
 	width: 100%;
 	display: table;
+	overflow: hidden;
+	background: url('../img/bg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-body > h1 {
+body > #main-container {
 	display: table-cell;
 	vertical-align: middle;
+	color: white;
 	text-align: center;
-	font-size: 50pt;
-	text-transform: uppercase;
-	cursor: default;
-	font-family: 'Bungee Hairline', cursive;
+}
+
+.bubble {
+	height: 55px;
+	width: 55px;
+	line-height: 55px;
+	font-size: 30px;
+	border-radius: 50%;
+	display: block;
+}
+
+.bubble.avatar-bubble {
+	height: 210px;
+	width: 210px;
+	position: relative;
+	background: url('../img/avatar.jpg');
+	background-size: 210px 210px;
+	border: 7px solid #ffffff;
+	margin: 0px auto 0px auto;
+}
+
+.bubble.link-bubble {
+	position: absolute;
+	top: 77.5px;
+	left: 77.5px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 999;
 }
